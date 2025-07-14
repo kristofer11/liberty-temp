@@ -14,10 +14,11 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #1a1a2e;
-            color: #e0e0e0;
+            background-color: #f1f3ee;
+            color: #b4bdab;
             line-height: 1.6;
             display: flex;
+
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -28,6 +29,9 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .fade-in {
@@ -50,7 +54,7 @@
 
         h1 {
             font-size: 2.5rem;
-            color: #6ab0ff;
+            color: #fdb020;
             margin-bottom: 20px;
         }
 
@@ -58,10 +62,11 @@
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto 20px;
+            color: #555b43;
         }
 
         a {
-            color: #f4c430;
+            color: #fdb020;
             text-decoration: none;
         }
 
@@ -69,9 +74,19 @@
             text-decoration: underline;
         }
 
-        .logo {
-            width: 150px;
+        .logo-div{
+            width: 350px;
+            max-width: 90vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 350px;
+            max-width: 85vw;
         }
 
         @media (max-width: 768px) {
@@ -86,12 +101,16 @@
             .container {
                 padding: 15px;
             }
+
         }
     </style>
 </head>
+
 <body>
     <div class="container fade-in">
-        <img src="assets/logo.svg" alt="Liberty Web Solutions Logo" class="logo">
+        <div class="logo-div">
+            <img src="assets/logo.png" alt="Liberty Web Solutions Logo" class="logo">
+        </div>
         <h1>Liberty Web Solutions</h1>
         <p>Why is our website a bit... underwhelming? Because we're too busy crafting dazzling online presences for our
             clients, making their visions reality!</p>
@@ -99,5 +118,5 @@
         <p>Email us to get in touch: <a href="mailto:info@libertywebsolutions.com">info@libertywebsolutions.com</a></p>
     </div>
 </body>
-</html>
 
+</html>
